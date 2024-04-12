@@ -9,7 +9,7 @@ export default async function Home() {
   );
 
   return (
-    <main className="flex justify-center">
+    <main className="flex justify-center flex-wrap">
       <div className="max-w-screen-lg w-full">
         <ul className="flex gap-2">
           {data.map((item) => (
