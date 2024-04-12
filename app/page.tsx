@@ -10,21 +10,23 @@ export default async function Home() {
 
   return (
     <main className="flex justify-center">
-      <ul className="max-w-screen-lg">
-        {data.map((item) => (
-          <li key={item.id}>
-            <Link href={`xem-phim/${item.id}`}>
-              <Image
-                src={item.thumbnail}
-                alt={item.title}
-                width={200}
-                height={300}
-              />
-              <h2>{item.title}</h2>
-            </Link>
-          </li>
-        ))}
-      </ul>
+      <div className="max-w-screen-lg w-full">
+        <ul className="flex gap-2">
+          {data.map((item) => (
+            <li key={item.id}>
+              <Link href={`watch/${item.id}`}>
+                <Image
+                  src={item.thumbnail}
+                  alt={item.title}
+                  width={200}
+                  height={300}
+                />
+                <h2>{item.title}</h2>
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </div>
     </main>
   );
 }
