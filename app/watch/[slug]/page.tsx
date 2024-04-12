@@ -12,15 +12,28 @@ export default async function Page({ params }: { params: { slug: string } }) {
   }
 
   return (
-    <video width="320" height="240" controls preload="none">
-      <source src={film.src} type="video/mp4" />
-      <track
-        src="/path/to/captions.vtt"
-        kind="subtitles"
-        srcLang="en"
-        label="English"
-      />
-      Your browser does not support the video tag.
-    </video>
+    <div>
+      <div className="p-2">
+        <div className="rounded-sm overflow-hidden">
+
+        <video
+          className="max-w-screen-lg w-full"
+          controls
+          preload="auto"
+          autoPlay
+        >
+          <source src={film.src} type="video/mp4" />
+          <track
+            src="/path/to/captions.vtt"
+            kind="subtitles"
+            srcLang="en"
+            label="English"
+          />
+          Your browser does not support the video tag.
+        </video>
+        </div>
+        <h2 className="font-semibold text-md">{film.title}</h2>
+      </div>
+    </div>
   );
 }
