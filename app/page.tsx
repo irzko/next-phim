@@ -11,7 +11,7 @@ export default async function Home() {
   return (
     <main className="flex justify-center flex-wrap">
       <div className="max-w-screen-lg w-full">
-        <ul className="flex gap-2">
+        <ul className="flex flex-wrap gap-2">
           {data.map((item) => (
             <li key={item.id}>
               <Link href={`watch/${item.id}`}>
