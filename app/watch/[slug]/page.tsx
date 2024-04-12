@@ -13,8 +13,8 @@ export default async function Page({ params }: { params: { slug: string } }) {
 
   return (
     <div>
-      <div className="p-2">
-        <div className="rounded-sm overflow-hidden">
+      <div className="p-1">
+        <div className="rounded-lg overflow-hidden">
 
         <video
           className="max-w-screen-lg w-full"
