@@ -28,7 +28,26 @@ export default function SearchPage() {
   return (
     <main className="flex justify-center">
       <div className="max-w-screen-sm w-full p-2">
-        <div className="flex justify-center mb-2">
+        <div className="flex justify-center items-center mb-2">
+          <Link className="mr-2" href="/">
+            <svg
+              className="w-6 h-6 text-white"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              width={24}
+              height={24}
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke="currentColor"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M5 12h14M5 12l4-4m-4 4 4 4"
+              />
+            </svg>
+          </Link>
           <div className="relative w-full max-w-sm">
             <div className="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
               <svg
@@ -40,8 +59,8 @@ export default function SearchPage() {
               >
                 <path
                   stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                   strokeWidth="2"
                   d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
                 />

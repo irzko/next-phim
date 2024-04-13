@@ -51,12 +51,12 @@ export default async function Home() {
                     alt={item.title}
                     fill
                     className="object-cover rounded-b-lg"
-                    // width={200}
-                    // height={300}
                   />
                 </div>
 
-                <h2 className="font-semibold p-2 text-white">{item.title}</h2>
+                <h2 className="font-semibold p-2 text-white min-h-16">
+                  {item.title}
+                </h2>
               </Link>
             </li>
           ))}

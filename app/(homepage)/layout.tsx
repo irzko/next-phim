@@ -6,7 +6,7 @@ export default function HomeLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <>
-      <nav className="bg-gray-900 border-b border-gray-700">
+      <nav className="bg-gray-900 border-b sticky top-0 z-50 border-gray-700">
         <div className="max-w-screen-lg flex flex-wrap items-center justify-between mx-auto h-16 px-4">
           <Link
             href="/"
@@ -33,9 +33,9 @@ export default function HomeLayout({
             >
               <path
                 stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
                 d="M1 1h15M1 7h15M1 13h15"
               />
             </svg>
@@ -70,9 +70,9 @@ export default function HomeLayout({
                   >
                     <path
                       stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
                       d="m1 1 4 4 4-4"
                     />
                   </svg>
@@ -111,9 +111,9 @@ export default function HomeLayout({
                         >
                           <path
                             stroke="currentColor"
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            stroke-width="2"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                            strokeWidth="2"
                             d="m1 1 4 4 4-4"
                           />
                         </svg>

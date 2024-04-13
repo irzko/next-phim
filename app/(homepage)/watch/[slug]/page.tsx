@@ -1,3 +1,4 @@
+import VideoWithBlob from "@/components/video-player";
 import { getDataSheet } from "@/lib/gSheet";
 
 export default async function Page({ params }: { params: { slug: string } }) {
@@ -13,11 +14,12 @@ export default async function Page({ params }: { params: { slug: string } }) {
 
   return (
     <div className="flex justify-center">
-      <div className="p-1 max-w-screen-lg w-full">
+      <div className="p-2 max-w-screen-lg w-full">
         <div className="rounded-lg overflow-hidden">
           <video
             className="max-w-screen-lg w-full"
             controls
+            crossOrigin="anonymous"
             preload="auto"
             autoPlay
           >
@@ -25,7 +27,9 @@ export default async function Page({ params }: { params: { slug: string } }) {
             Your browser does not support the video tag.
           </video>
         </div>
-        <h2 className="text-white font-semibold py-4">{film.title}</h2>
+        <div className="border mt-2 border-gray-700 overflow-hidden bg-gray-800 rounded-lg">
+          <h2 className="text-white font-semibold p-2">{film.title}</h2>
+        </div>
       </div>
     </div>
   );
