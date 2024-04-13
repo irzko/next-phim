@@ -1,19 +1,26 @@
+import { Pacifico } from "next/font/google";
 import Link from "next/link";
 import React from "react";
+const pacifico = Pacifico({
+  weight: ["400"],
+  subsets: ["latin"],
+});
 
 export default function HomeLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <>
-      <nav className="bg-gray-900 border-b sticky top-0 z-50 border-gray-700">
+      <nav className="bg-gray-900/70 border-b sticky top-0 z-50 border-gray-700 backdrop-blur-lg backdrop-saturate-150">
         <div className="max-w-screen-lg flex flex-wrap items-center justify-between mx-auto h-16 px-4">
           <Link
             href="/"
             className="flex items-center space-x-3 rtl:space-x-reverse"
           >
-            <span className="self-center text-2xl font-semibold whitespace-nowrap text-white">
-              anivisub
+            <span
+              className={`self-center text-2xl font-semibold whitespace-nowrap text-white ${pacifico.className}`}
+            >
+              Anivisub
             </span>
           </Link>
           <button
