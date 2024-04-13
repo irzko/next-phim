@@ -28,7 +28,7 @@ export default function SearchPage() {
   return (
     <main className="flex flex-col items-center">
       <div className="border-b h-16 flex justify-center items-center border-gray-700 w-full">
-        <div className="flex justify-center items-center max-w-sm w-full">
+        <div className="flex justify-center items-center max-w-sm w-full p-2">
           <Link className="mr-2" href="/">
             <svg
               className="w-6 h-6 text-white"
