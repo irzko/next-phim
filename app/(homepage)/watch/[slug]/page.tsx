@@ -19,7 +19,6 @@ export default async function Page({ params }: { params: { slug: string } }) {
           <video
             className="max-w-screen-lg w-full"
             controls
-            crossOrigin="anonymous"
             preload="auto"
             autoPlay
           >
