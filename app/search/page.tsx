@@ -26,9 +26,9 @@ export default function SearchPage() {
     setFilms(filteredFilms || []);
   };
   return (
-    <main className="flex justify-center">
-      <div className="max-w-screen-sm w-full p-2">
-        <div className="flex justify-center items-center mb-2">
+    <main className="flex flex-col items-center">
+      <div className="border-b h-16 flex justify-center items-center border-gray-700 w-full">
+        <div className="flex justify-center items-center max-w-sm w-full">
           <Link className="mr-2" href="/">
             <svg
               className="w-6 h-6 text-white"
@@ -48,7 +48,7 @@ export default function SearchPage() {
               />
             </svg>
           </Link>
-          <div className="relative w-full max-w-sm">
+          <div className="relative w-full">
             <div className="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
               <svg
                 className="w-4 h-4 text-gray-400"
@@ -76,6 +76,8 @@ export default function SearchPage() {
             ></input>
           </div>
         </div>
+      </div>
+      <div className="max-w-sm w-full p-2">
         {/* <h2 className="font-semibold text-white">Kết quả tìm kiếm</h2> */}
         <ul>
           {films.map((film) => (
