@@ -1,10 +1,9 @@
-import VideoWithBlob from "@/components/video-player";
 import { getDataSheet } from "@/lib/gSheet";
 
 export default async function Page({ params }: { params: { slug: string } }) {
   const films = await getDataSheet(
     "1rMHkjsupREVnnIKaAOEdNk78YgX1SBy_XNTpANhYfHA",
-    "0"
+    "7055404"
   );
 
   const film = films.find((film) => film.id === params.slug);
@@ -22,9 +21,10 @@ export default async function Page({ params }: { params: { slug: string } }) {
             crossOrigin="anonymous"
             preload="auto"
             autoPlay
+            src={film.src}
           >
-            <source src={film.src} />
-            Your browser does not support the video tag.
+            {/* <source src={film.src} />
+            Your browser does not support the video tag. */}
           </video>
         </div>
         <div className="border mt-2 border-gray-700 overflow-hidden bg-gray-800 rounded-lg">

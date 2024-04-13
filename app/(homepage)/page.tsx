@@ -44,7 +44,7 @@ export default async function Home() {
               key={item.id}
               className="border border-gray-700 overflow-hidden bg-gray-800 rounded-lg"
             >
-              <Link href={`watch/${item.id}`}>
+              <Link href={`film/${item.id}`}>
                 <div className="relative w-full aspect-[3/4]">
                   <Image
                     src={item.thumbnail}
