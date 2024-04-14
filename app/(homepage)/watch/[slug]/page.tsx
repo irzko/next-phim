@@ -32,7 +32,7 @@ export default async function Page({ params }: { params: { slug: string } }) {
           <video
             className="max-w-screen-lg w-full"
             controls
-            preload="auto"
+            preload="none"
             autoPlay
           >
             <source src={film.src} />

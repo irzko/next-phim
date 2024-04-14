@@ -11,7 +11,7 @@ export default async function Home() {
   return (
     <main className="flex justify-center">
       <div className="max-w-screen-lg w-full p-2">
-        <div className="flex justify-center mb-2">
+        {/* <div className="flex justify-center mb-2">
           <div className="relative w-full max-w-sm">
             <div className="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
               <svg
@@ -37,7 +37,7 @@ export default async function Home() {
               Tìm kiếm
             </Link>
           </div>
-        </div>
+        </div> */}
         <ul className="grid grid-cols-2 md:grid-cols-4 xl:grid-cols-6 gap-2">
           {data.map((item) => (
             <li
