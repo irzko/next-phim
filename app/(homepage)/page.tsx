@@ -54,7 +54,7 @@ export default async function Home() {
                   />
                 </div>
 
-                <h2 className="font-semibold p-2 text-white min-h-16">
+                <h2 className="font-semibold p-2 flex justify-center text-center items-center text-white min-h-16">
                   {item.title}
                 </h2>
               </Link>

@@ -28,7 +28,7 @@ export default async function Page({ params }: { params: { slug: string } }) {
   return (
     <div className="flex justify-center">
       <div className="p-2 max-w-screen-sm w-full">
-        <div className="flex mb-4 border border-gray-700 overflow-hidden bg-gray-800 rounded-lg">
+        <div className="flex mb-2 border border-gray-700 overflow-hidden bg-gray-800 rounded-lg">
           <div className="relative w-64 aspect-[3/4]">
             <Image
               src={info.thumbnail}

@@ -34,10 +34,9 @@ export default async function Page({ params }: { params: { slug: string } }) {
             controls
             preload="auto"
             autoPlay
-            src={film.src}
           >
-            {/* <source src={film.src} />
-            Your browser does not support the video tag. */}
+            <source src={film.src} />
+            Your browser does not support the video tag.
           </video>
         </div>
         <div>
@@ -50,7 +49,11 @@ export default async function Page({ params }: { params: { slug: string } }) {
             {eps.map((f) => (
               <li key={f.id}>
                 <Link
-                  className="flex p-2 h-10 w-10 justify-center items-center text-sm font-medium focus:outline-none rounded-lg border focus:z-10 focus:ring-4 bg-gray-800 text-gray-400 border-gray-600 hover:text-white hover:bg-gray-700"
+                  className={`flex p-2 h-10 w-10 justify-center items-center text-sm font-medium focus:outline-none rounded-lg focus:z-10 focus:ring-4 ${
+                    f.id === params.slug
+                      ? "bg-blue-600 hover:bg-blue-700 focus:ring-blue-800"
+                      : "border bg-gray-800 text-gray-400 border-gray-600 hover:text-white hover:bg-gray-700"
+                  }`}
                   href={`/watch/${f.id}`}
                 >
                   <p className="text-white">{f.eps}</p>
