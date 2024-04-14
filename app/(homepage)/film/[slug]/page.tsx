@@ -54,7 +54,7 @@ export default async function Page({ params }: { params: { slug: string } }) {
             {films.map((film) => (
               <li key={film.id}>
                 <Link
-                  className="p-2 h-10 w-10 border flex justify-center items-center border-gray-700 overflow-hidden bg-gray-800 rounded-lg"
+                  className="flex p-2 h-10 w-10 justify-center items-center text-sm font-medium focus:outline-none rounded-lg border focus:z-10 focus:ring-4 bg-gray-800 text-gray-400 border-gray-600 hover:text-white hover:bg-gray-700"
                   href={`/watch/${film.id}`}
                 >
                   <p className="text-white">{film.eps}</p>
