@@ -1,4 +1,3 @@
-import DropDown, { DropDownItem } from "@/components/Dropdown";
 import { Pacifico } from "next/font/google";
 import Link from "next/link";
 import React from "react";
@@ -25,7 +24,6 @@ export default function HomeLayout({
             </span>
           </Link>
           <div className="flex gap-2">
-
             <Link
               href="/search"
               type="button"
