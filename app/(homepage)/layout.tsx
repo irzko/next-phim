@@ -1,3 +1,4 @@
+import DropDown, { DropDownItem } from "@/components/Dropdown";
 import { Pacifico } from "next/font/google";
 import Link from "next/link";
 import React from "react";
@@ -24,13 +25,14 @@ export default function HomeLayout({
             </span>
           </Link>
           <div className="flex gap-2">
+
             <Link
               href="/search"
               type="button"
               className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm rounded-lg md:hidden focus:outline-none focus:ring-2 text-gray-400 hover:bg-gray-700 focus:ring-gray-600"
             >
               <svg
-                className="w-4 h-4 text-gray-400"
+                className="w-5 h-5 text-gray-400"
                 aria-hidden="true"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"

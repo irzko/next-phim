@@ -8,6 +8,9 @@ export default async function Home() {
     "0"
   );
 
+  const newFilms = data.reverse();
+  // const newFilms = data.reverse().slice(0, 12);
+
   return (
     <main className="flex justify-center">
       <div className="max-w-screen-lg w-full p-2">
@@ -38,8 +41,11 @@ export default async function Home() {
             </Link>
           </div>
         </div> */}
-        <ul className="grid grid-cols-2 md:grid-cols-4 xl:grid-cols-6 gap-2">
-          {data.map((item) => (
+        <h4 className="text-2xl mb-2 font-bold text-white">
+          Phim mới cập nhật
+        </h4>
+        <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-6 gap-2">
+          {newFilms.map((item) => (
             <li
               key={item.id}
               className="border border-gray-700 overflow-hidden bg-gray-800 rounded-lg"

@@ -37,9 +37,9 @@ export default async function Page({ params }: { params: { slug: string } }) {
               className="object-cover rounded-lg"
             />
           </div>
-          <div className="p-2 space-y-2">
+          <div className="p-2 space-y-2 w-full">
             <h2 className="font-semibold text-2xl text-white">{info.title}</h2>
-            <hr className="border-gray-700" />
+            <hr className="border-gray-700 w-full" />
             <p className="text-white text-sm">
               Thể loại:
               <br />
