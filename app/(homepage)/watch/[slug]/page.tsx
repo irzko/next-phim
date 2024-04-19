@@ -29,7 +29,8 @@ export default async function Page({ params }: { params: { slug: string } }) {
     <div className="flex justify-center">
       <div className="p-2 max-w-screen-lg space-y-2 w-full">
         <div className="rounded-lg overflow-hidden">
-          <video
+          <iframe src={film.src} allowFullScreen allow="autoplay" className="w-full aspect-[4/3]"></iframe>
+          {/* <video
             className="max-w-screen-lg w-full"
             controls
             preload="none"
@@ -37,7 +38,7 @@ export default async function Page({ params }: { params: { slug: string } }) {
           >
             <source src={film.src} />
             Your browser does not support the video tag.
-          </video>
+          </video> */}
         </div>
         <div>
           <h2 className="text-white font-semibold p-2">
