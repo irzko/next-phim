@@ -27,9 +27,14 @@ export default async function Page({ params }: { params: { slug: string } }) {
 
   return (
     <div className="flex justify-center">
-      <div className="p-2 max-w-screen-lg space-y-2 w-full">
+      <div className="p-2 max-w-screen-md space-y-2 w-full">
         <div className="rounded-lg overflow-hidden">
-          <iframe src={film.src} allowFullScreen allow="autoplay" className="w-full aspect-[4/3]"></iframe>
+          <iframe
+            src={film.src}
+            allowFullScreen
+            allow="autoplay"
+            className="w-full aspect-video"
+          ></iframe>
           {/* <video
             className="max-w-screen-lg w-full"
             controls
